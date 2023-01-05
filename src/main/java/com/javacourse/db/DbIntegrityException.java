@@ -1,4 +1,4 @@
-package db;
+package com.javacourse.db;
 
 public class DbIntegrityException extends RuntimeException{
 
