@@ -6,7 +6,6 @@ import com.javacourse.model.dao.SellerDao;
 import com.javacourse.model.entities.Department;
 import com.javacourse.model.entities.Seller;
 
-import javax.swing.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
