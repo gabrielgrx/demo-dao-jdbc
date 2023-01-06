@@ -12,7 +12,7 @@ public class Program2 {
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
         System.out.println("=== TEST 1: Department findById ====");
-        Department department = departmentDao.findById(3);
+        Department department = departmentDao.findById(9);
         System.out.println(department);
 
         System.out.println("\n=== TEST 2: Department findAll and Order by Name ====");
@@ -20,5 +20,10 @@ public class Program2 {
         for (Department dep : list) {
             System.out.println(dep);
         }
+
+        System.out.println("\n=== TEST 3: Department insert ====");
+        Department newDepartment = new Department(null, "Music");
+        departmentDao.insert(newDepartment);
+        System.out.println("Inserted! New id = " + newDepartment);
     }
 }
